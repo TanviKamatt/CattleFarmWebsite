@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+         <title>internship website</title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="style.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+         <script type="text/javascript">
+            function sendEmail(){
+	        var subject = document.getElementById("subject").value;
+	        var message = document.getElementById("message").value;
+	        var emailTo = "tanvi.kamat16@gmail.com";
+	        window.location.href = "mailto:" + emailTo + "?subject=" + subject + "" + "&body=" + message ;
+	        return false;
+            }
+         </script>
+    </head>
+    <body>
+        <header class="subheader">
+            <nav>
+                <a href="web.html"><img src="images/logo.png"/></a>
+                <div class="nav-links">
+                   <ul>
+                        <li><a href="web.html">HOME</a></li>
+                        <li><a href="">PRODUCTS</a></li>
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a href="">GALLERY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1>CONTACT</h1>
+        </header>
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d945.124524382758!2d73.849807!3d18.6416314!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c78daa88594b%3A0x48269788935abadd!2z4KSq4KS-4KSC4KSc4KSw4KSq4KWL4KSzIOCkl-CljOCktuCkvuCks-Ckvg!5e0!3m2!1sen!2sin!4v1658591907616!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="contactus">
+            <div class="row">
+                <div class="contactcol">
+                    <div>
+                        <span>
+                            <h5>panjarpol cattle farm, JVR2+M92</h5>
+                            <p> Bhosari, Pimpri-Chinchwad, Maharashtra 412105</p>
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <h5>Mobile No.:095526 45419</h5>
+                            <p>Sunday to saturday, 6am to 6pm</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i style="font-size:36px"></i>
+                        <span>
+                            <h5>email@email.com</h5>
+                            <p>Email us your query</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contactcol">
+                   
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                        <textarea rows="10" id="message" name="message" placeholder="message" required></textarea>
+                        <button type="submit" class="hero-btn" onclick="sendEmail();">Send message</button>
+                    
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
